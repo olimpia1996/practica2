@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block body %}
+    <h2>{{the_title}}</h2>
+    <form method="post" action="/exec_fuerza">
+       <table>
+           <p>Use this form to submit data
+               to execute the equation</p>
+           <tr>
+               <td>M:</td>
+               <td><input type="number" name="m" /></td>
+           </tr>
+           <tr>
+               <td>A:</td>
+               <td><input type="number" name="a" /></td>
+           </tr>
+         </table>
+        <p>When you're ready, click this button.</p>
+        <p><input type="submit" name="btn_calc"
+         value="calcular Fuerza" /></p>
+    </form>
+{% endblock%}
